@@ -1,0 +1,83 @@
+WARNING: Logging before flag parsing goes to stderr.
+W0609 21:03:02.975865 140155576829696 __init__.py:56] Some hub symbols are not available because TensorFlow version is less than 1.14
+Data folder: /mnt/batch/tasks/shared/LS_root/jobs/nnworkspace/azureml/bert_1560113064_23533848/mounts/workspaceblobstore/newsdata
+WARNING:tensorflow:From /azureml-envs/azureml_71ca639cbb8fbe378ad7e39428f2931b/lib/python3.6/site-packages/tensorflow/python/ops/control_flow_ops.py:3632: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+W0609 21:03:34.412474 140155576829696 deprecation.py:323] From /azureml-envs/azureml_71ca639cbb8fbe378ad7e39428f2931b/lib/python3.6/site-packages/tensorflow/python/ops/control_flow_ops.py:3632: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+2019-06-09 21:03:36.570382: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+2019-06-09 21:03:39.393727: I tensorflow/compiler/xla/service/service.cc:150] XLA service 0x5574445c9290 executing computations on platform CUDA. Devices:
+2019-06-09 21:03:39.393764: I tensorflow/compiler/xla/service/service.cc:158]   StreamExecutor device (0): Tesla K80, Compute Capability 3.7
+2019-06-09 21:03:39.397155: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2596990000 Hz
+2019-06-09 21:03:39.397477: I tensorflow/compiler/xla/service/service.cc:150] XLA service 0x55744493eab0 executing computations on platform Host. Devices:
+2019-06-09 21:03:39.397501: I tensorflow/compiler/xla/service/service.cc:158]   StreamExecutor device (0): <undefined>, <undefined>
+2019-06-09 21:03:39.398039: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1433] Found device 0 with properties: 
+name: Tesla K80 major: 3 minor: 7 memoryClockRate(GHz): 0.8235
+pciBusID: 04b1:00:00.0
+totalMemory: 11.17GiB freeMemory: 11.11GiB
+2019-06-09 21:03:39.398060: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1512] Adding visible gpu devices: 0
+2019-06-09 21:03:39.400855: I tensorflow/core/common_runtime/gpu/gpu_device.cc:984] Device interconnect StreamExecutor with strength 1 edge matrix:
+2019-06-09 21:03:39.400878: I tensorflow/core/common_runtime/gpu/gpu_device.cc:990]      0 
+2019-06-09 21:03:39.400887: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1003] 0:   N 
+2019-06-09 21:03:39.401379: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1115] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 10805 MB memory) -> physical GPU (device: 0, name: Tesla K80, pci bus id: 04b1:00:00.0, compute capability: 3.7)
+Beginning Training!
+WARNING:tensorflow:From Bert.py:138: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+W0609 21:07:17.142919 140155576829696 deprecation.py:506] From Bert.py:138: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+WARNING:tensorflow:From /azureml-envs/azureml_71ca639cbb8fbe378ad7e39428f2931b/lib/python3.6/site-packages/tensorflow/python/training/learning_rate_decay_v2.py:321: div (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Deprecated in favor of operator or tf.math.divide.
+W0609 21:07:17.178086 140155576829696 deprecation.py:323] From /azureml-envs/azureml_71ca639cbb8fbe378ad7e39428f2931b/lib/python3.6/site-packages/tensorflow/python/training/learning_rate_decay_v2.py:321: div (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Deprecated in favor of operator or tf.math.divide.
+WARNING:tensorflow:From /azureml-envs/azureml_71ca639cbb8fbe378ad7e39428f2931b/lib/python3.6/site-packages/tensorflow/python/ops/math_ops.py:3066: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+W0609 21:07:17.250634 140155576829696 deprecation.py:323] From /azureml-envs/azureml_71ca639cbb8fbe378ad7e39428f2931b/lib/python3.6/site-packages/tensorflow/python/ops/math_ops.py:3066: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+/azureml-envs/azureml_71ca639cbb8fbe378ad7e39428f2931b/lib/python3.6/site-packages/tensorflow/python/ops/gradients_impl.py:110: UserWarning: Converting sparse IndexedSlices to a dense Tensor of unknown shape. This may consume a large amount of memory.
+  "Converting sparse IndexedSlices to a dense Tensor of unknown shape. "
+WARNING:tensorflow:From /azureml-envs/azureml_71ca639cbb8fbe378ad7e39428f2931b/lib/python3.6/site-packages/tensorflow/python/ops/metrics_impl.py:455: to_float (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+W0609 21:07:26.022539 140155576829696 deprecation.py:323] From /azureml-envs/azureml_71ca639cbb8fbe378ad7e39428f2931b/lib/python3.6/site-packages/tensorflow/python/ops/metrics_impl.py:455: to_float (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+2019-06-09 21:07:31.983187: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1512] Adding visible gpu devices: 0
+2019-06-09 21:07:31.983239: I tensorflow/core/common_runtime/gpu/gpu_device.cc:984] Device interconnect StreamExecutor with strength 1 edge matrix:
+2019-06-09 21:07:31.983249: I tensorflow/core/common_runtime/gpu/gpu_device.cc:990]      0 
+2019-06-09 21:07:31.983256: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1003] 0:   N 
+2019-06-09 21:07:31.983415: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1115] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 10805 MB memory) -> physical GPU (device: 0, name: Tesla K80, pci bus id: 04b1:00:00.0, compute capability: 3.7)
+2019-06-09 21:09:42.337189: I tensorflow/stream_executor/dso_loader.cc:152] successfully opened CUDA library libcublas.so.10.0 locally
+WARNING:tensorflow:From /azureml-envs/azureml_71ca639cbb8fbe378ad7e39428f2931b/lib/python3.6/site-packages/tensorflow/python/training/saver.py:966: remove_checkpoint (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to delete files with this prefix.
+W0609 22:21:20.170714 140155576829696 deprecation.py:323] From /azureml-envs/azureml_71ca639cbb8fbe378ad7e39428f2931b/lib/python3.6/site-packages/tensorflow/python/training/saver.py:966: remove_checkpoint (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to delete files with this prefix.
+Training took time  8:48:49.707350
+2019-06-10 05:54:43.635648: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1512] Adding visible gpu devices: 0
+2019-06-10 05:54:43.635706: I tensorflow/core/common_runtime/gpu/gpu_device.cc:984] Device interconnect StreamExecutor with strength 1 edge matrix:
+2019-06-10 05:54:43.635715: I tensorflow/core/common_runtime/gpu/gpu_device.cc:990]      0 
+2019-06-10 05:54:43.635722: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1003] 0:   N 
+2019-06-10 05:54:43.635879: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1115] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 10805 MB memory) -> physical GPU (device: 0, name: Tesla K80, pci bus id: 04b1:00:00.0, compute capability: 3.7)
+WARNING:tensorflow:From /azureml-envs/azureml_71ca639cbb8fbe378ad7e39428f2931b/lib/python3.6/site-packages/tensorflow/python/training/saver.py:1266: checkpoint_exists (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to check for files with this prefix.
+W0610 05:54:43.636095 140155576829696 deprecation.py:323] From /azureml-envs/azureml_71ca639cbb8fbe378ad7e39428f2931b/lib/python3.6/site-packages/tensorflow/python/training/saver.py:1266: checkpoint_exists (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to check for files with this prefix.
+{'eval_accuracy': 0.7073296, 'loss': 1.0802225, 'global_step': 18281}
+
+
+The experiment completed successfully. Finalizing run...
+Logging experiment finalizing status in history service.
+Cleaning up all outstanding Run operations, waiting 300.0 seconds
+2 items cleaning up...
+Cleanup took 0.0009775161743164062 seconds
